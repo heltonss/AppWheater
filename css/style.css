@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow: hidden;
+  font-family: 'Open Sans', sans-serif;
+  color: rgb(255, 250, 200);
+}
+
+
+.container {
+  background: url('../assets/summer.jpg');
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: repeat(3, 33%);
+}
+
+.weather-local {
+  font-size: 4rem;
+  margin: 10% 0 0 10%;
+}
+
+.weather-temp {
+  font-size: 12rem;
+  margin-left: 10%;
+}
+
+.weather-box {
+  margin-top: 25%;
+  display: inline-flex;
+  text-transform: uppercase
+}
+
+.weather-button{
+  width: 30%;
+  height: 15%;
+  float: right;
+  text-transform: uppercase;
+  background: rgba(213, 229, 246,0.7 );
+  border: none;
+  font-weight: 600;
+  
+}
+.weather-box-date {
+  text-align: center;
+  margin: 0 0 0 15%;
+  text-align: center;
+}
+
+.weather-footer {
+  font-size: 3rem;
+  text-align: right;
+  grid-column-start: 2;
+  position: fixed;
+  bottom: 0;
+  right: 5%;
+  grid-row-start: 3;
+  width: 100%;
+}
